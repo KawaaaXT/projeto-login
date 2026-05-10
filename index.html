@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estylo/style.css" media="all">
-    <link rel="stylesheet" href="estylo/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
-    <link rel="stylesheet" href="estylo/desktop.css" media="screen and  (max-width: 1439px)">
+    <link rel="stylesheet" href="estylo/media-querys.css">
+    
     
     <title>Document</title>
 </head>
 <body>
     <main>
-        <h1>Login</h1>
-        <p>
-            Seja Bem-vindo(a) novamente. Faça Login Para Acessar Sua conta é poder fazer as configurações no seu ambiente
-        </p>
-        <form>
-            <div>
-                <label for="nome"><input type="text" name="nname" id="iname" placeholder="NOME"></label>
-            </div>
+        <section id="login">
+          <div id="imagem">
+            
+
+          </div>
+          <div id="formulario">
+            <h1>Login</h1>
+            <p>
+                Seja Bem vindo (a) novamente, Faça o login para acessar sua conta e fazer as configuraçoes no seu ambiente
+            </p>
+            
+            <form action="login.php" method="post">
+                <div>
+                    <label for="inome"><input type="text" name="nnome" id="inome" placeholder="NOME" required minlength="8"></label>
+                    <label for="isenha"><input type="password" name="nsenha" id="isenha"></label>
+                    <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+                </div>
 
 
+            </form>
 
+          </div>
 
-        </form>
+        </section>
 
     </main>
     <footer>
