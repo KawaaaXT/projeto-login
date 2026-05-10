@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @media screen and (min-width: 768px) and (max-width: 992px){
 
     body{
@@ -8,37 +7,44 @@
 }
     section#login{
     width: 80vw;
+    height: 320px;
 }
     section#login > div#imagem{
      float: left;
      width: 50%;
      height: 100%;
      background-image: url(../imagens/project-log.jpg);
-     background-position: no-repeat;
+     background-repeat: no-repeat;
      background-size: cover;
      overflow-x: hidden;
 }
-    section#login > div#forumlario{
-     width: 65%;
-     height: 100%;
-     float: right;
-     
-}
+    section#login > div#formulario > h1 {
+        font-size: 2em;
+        text-align: center;
+    }
     section#login > div#formulario > p{
-        text-align: justify;
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+    form > input[type=submit]{
+        display: block;
+        width: 50%;
+        margin-bottom: 10px; 
+    }
+    form > a.esqueci{
+        width: 70%;
     }
 }
-
 @media  screen and (min-width: 992px) {
      body{
         background-image: linear-gradient(to bottom, #5a1e97,  #effffa29, #028183);
     }
     section#login{
         width: 850px;
+        height: 300px;
     }
     section#login > div#imagem{
         background-image: url(../imagens/project-log.jpg);
+        background-repeat: no-repeat;
         float: left;
         width: 50%;
         height: 100%;
@@ -47,29 +53,26 @@
         float: right;
         width: 50%;
         padding: 20px;
-        
     }
-    div#formulario > p{
+    form > a.esqueci{
+        width: 100%;
+    }
+    form > input[type=submit]{
+        display: block;
+        width: 100%;
+        background-color: white;
+        color: black;
+        margin-bottom: 10px;
+    }
+    section#login > div#formulario > p  {
         font-size: 1.3em;
+        text-align: justify;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    section#login > div#formulario > h1{
+       font-size: 2em; 
+       text-align: center;
+       letter-spacing: .5px ;
+       color: rgb(0, 0, 0);
+    }
 }
     
